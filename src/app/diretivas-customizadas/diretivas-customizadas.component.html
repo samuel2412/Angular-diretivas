@@ -1,0 +1,19 @@
+<p fundoAmarelo>diretivas-customizadas works!</p>
+
+<p highlightMouse>Texto com highlightMouse.</p>
+
+<p [highlight]="'red'" [defaultColor]="'gray'">Texto com highlightMouse.</p>
+   
+
+
+<h5>diretiva ngElse</h5>
+
+<div *ngIf="mostrarCursos">
+    Lista de Cursos
+</div>
+<div *ngElse="mostrarCursos">
+    Não há Cursos
+</div>
+<br>
+<button class="btn btn-primary"   (click)="alterarMostrarCursos()">Mostrar cursos</button>
+<br><br>
